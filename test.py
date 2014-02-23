@@ -3,6 +3,22 @@ Test patchy.py
 """
 from patchy import patch
 
+
+def test_sanity():
+    """
+    Test sanity of the running code.
+    """
+    assert 1 + 1 == 2
+
+def test_fib():
+    """
+    Test our fib function.
+    """
+    vals = fib(1)
+    assert vals == [1, 1, 2]
+    vals = fib2(1)
+    assert vals == [2, 2, 4]
+
 def hello_world():
     """
     Prints Hello World
